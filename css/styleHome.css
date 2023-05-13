@@ -1,4 +1,6 @@
 *{
+  padding: 0;
+  margin: 0; 
   box-sizing: border-box;
   margin: 0%;
   font-family: 'Roboto Slab', serif;
@@ -21,9 +23,6 @@ header{
   padding-right: 10px;
 }
 .logo{
-  width: 100px;
-  height: 50px;
-  background-color: aqua;
   margin-bottom: 10px;
   margin-right: 10px;
 }
@@ -130,7 +129,7 @@ header{
 /* herosection done */
 
 .break{
-  width: 800px;
+  width: 600px;
   height: 10px;
   background-color: rgba(0, 0, 0, 0.676);
   border-radius: 50px;
@@ -240,7 +239,7 @@ header{
   min-width: 200px;
   opacity: 0;
   -webkit-transition: opacity 0.4s;
-          transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 /* fade in lazy loaded image */
@@ -250,10 +249,113 @@ header{
 }
 
 /* carosel done */
-
-
-
 /* main done */
+
+
+
+
+/* audience interaction section  */
+.tour-tabbing-outer{
+    
+  color: #242729;
+  font-family: 'IBM Plex Sans', serif; 
+}
+.containfield{
+  width: 95%;
+  max-width: 1060px;
+  margin: auto;
+}
+.containfield > header {
+  margin-bottom: 30px;
+  text-align: center;
+  background-color: #f1f2f3;
+}
+.containfield > header > img {
+  max-width: 700px;
+  margin: auto;
+}
+.tour-tabbing-outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #f1f2f3;
+}
+.grid-col-3-6-3 {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  align-items: center;
+  justify-content: center;
+}
+.flex-listing {
+  list-style: none;
+}
+.flex-listing > li {
+  margin: 20px 0;
+  padding: 10px;
+  border-radius: 5px;
+  position: relative;
+}
+.flex-listing > li:hover, .flex-listing > li.active {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .09),
+              0 3px 8px rgba(0, 0, 0, .09),
+              0 4px 13px rgba(0, 0, 0, .13);
+}
+.flex-listing > li > a {
+  display: flex;
+  align-items: center;
+  text-decoration: unset;
+  color: #242729;
+  font-family: 'IBM Plex Sans', serif; 
+}
+.flex-listing > li > a > img {
+  max-width: 50px;
+  margin-right: 10px;
+}
+.col-left .flex-listing > li.active:after,
+.col-right .flex-listing > li.active:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -18px;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 1px solid #d6d9dc;
+  border-left: transparent;
+  border-bottom: transparent;
+  box-shadow: 2px -2px 8px rgba(59, 64, 69, .1);
+  transform: translateY(-50%) translateX(-50%) rotate(45deg);
+  transition: all 0.2s;
+}
+.col-right .flex-listing > li.active:after {
+  right: unset;
+  left: 0;
+  border-left: 1px solid #d6d9dc;
+  border-bottom: 1px solid #d6d9dc;
+  border-right: transparent;
+  border-top: transparent;
+  box-shadow: -2px 2px 8px rgba(59, 64, 69, .1);
+}
+.tab-content h4 {
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.current {
+  display: block;
+}
+
+
+
+/* audience interaction section  */
+
+
+
 
 /* footer start */
 footer{
