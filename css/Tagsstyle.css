@@ -87,36 +87,50 @@ main{
   display: flex;
   /* align-items: center; */
   align-items: start;
-  justify-content: flex-start; 
-  width: 100vw;
+  justify-content: center; 
+  width: 100%;
   /* max-width: 1060px; */
   background-color: rgb(238, 238, 239);
-  /* height: px; */
-  /* padding-top: 100px; */
-  /* margin-top: 0px; */
+  height: 100px;
+  
   
   
 }
+
+
 
 /* side bar starts */
 .sidebr{
   font-family: 'Roboto Slab', serif;
   width: 300px;
   background-color: rgb(255, 255, 255);
-  height:800px;
+  height:810px;
   
-  padding-bottom: 0px;
+  padding-bottom: 5px;
   border-right:0.5px solid #6b6b6cb4;
 
 }
-.publicLink > a{
+.sideLink > a{
+  color: black;
+}
+.mainLink:hover{
+  font-weight: 600;
+}
+.plink{
   display: block;
-  width: 180px;
+  width: 185px;
   height: 40px;
   padding: 10px;
   text-decoration: none;
+  color: black;
 
 }
+.plink1{
+  
+  width: 230px;
+  
+}
+
 
 .pl{
   margin-left: 35px;
@@ -127,67 +141,107 @@ main{
   font-weight: 600;
 }
 
-.tagbar{
-  padding-top: 20px;
-  padding-left: 20px;
-  display: block;
-  
-  
-  
+.plink1:hover{
+  border-right:3px solid #d67733;
 }
-.tagtext{
+
+
+
+/* side bar end */
+
+
+
+/* middle bar starts */
+.middlebr{
+  width: 1300px;
+  background-color: rgb(255, 255, 255);
+  height:810px;
+  
+  border-right:0.5px solid #6b6b6cad ;
   padding-top: 20px;
-  text-align: start;
+  padding-left: 30px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   
 }
 
-.taglink > a{
+.tagHead{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-top:25px;
+  
+}
+
+.filterSearch{
+  padding: 10px;
+  border: 1px solid rgba(57, 57, 57, 0.836);
+  border-radius: 2px;
+  font-size: 16px;
+  margin-right: 650px;
+}
+
+.linkhead{
+  padding: 10px;
+  border: 1px solid rgb(79, 79, 79);
+  border-radius: 3px;
+  text-decoration: none;
+}
+.linkhead2{
+  padding: 10px;
+  border: 1px solid rgb(79, 79, 79);
   text-decoration: none;
 }
 
-.TagBar2{
+.tagblock{
+  margin-top: 20px;
+}
+
+.singleRow{
   display: flex;
   align-items: center;
-  margin-top: 25px;
+  
 }
 
-.filter{
-  margin-left: 20px;
-  padding-right: 750px;
- 
+.block{
+  height: 160px;
+  width: 250px;
+  background-color: #ffffff;
+  margin: 10px;
+  border:1px solid rgb(92, 92, 92);
+  border-radius: 5px;
+  padding:0px 10px;
+}
+.block:hover{
+  filter: drop-shadow(4.0px 2mm 2mm rgb(97,97,97));
 }
 
-.filterbar{
-  padding: 10px;
-  font-size: medium;
+.blockTag{
+  margin-top: 4px;
 }
 
-/* .tagnames{
- 
-
-} */
-.linkBox{
-  padding: 10px;
-  border: 1px solid black;
+.blockTaglink{
+  font-size: 12px;
+  padding: 3px;
+  border: 0.5px solid rgb(99, 44, 237);
+  text-decoration: none;
+  background-color: rgb(121, 68, 254);
+  color: white;
   border-radius: 2px;
-  text-decoration: none;
-  font-size: medium;
-  color: black;
 }
-.linkBox2{
-  padding: 10px;
-  border: 1px solid black;
-  text-decoration: none;
-  font-size: medium;
-  color: black;
+
+.blockDesc{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.MainTags{
+.inblock{
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
-
-
+/* middle bar ends */
 
 
 /* footer start */
